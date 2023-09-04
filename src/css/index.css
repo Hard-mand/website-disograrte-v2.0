@@ -1,6 +1,7 @@
 /*↓↓↓ EVITAR PARPADEO CUANDO SE NAVEGA EN EL SITIO Y TIENE FIJADO UN TEMA ↓↓↓*/
 body {
   visibility: hidden;
+  font-family: 'Poppins', sans-serif !important;
 }
 /*↓↓↓ BOTÓN WHATSAPP ↓↓↓*/
 button.wh-ap-btn {
