@@ -1,0 +1,63 @@
+/*↓↓↓ EVITAR PARPADEO CUANDO SE NAVEGA EN EL SITIO Y TIENE FIJADO UN TEMA ↓↓↓*/
+body {
+  visibility: hidden;
+}
+/*↓↓↓ BOTÓN WHATSAPP ↓↓↓*/
+button.wh-ap-btn {
+  outline: none;
+  width:  60px;
+  height:  60px;
+  border:  0;
+  background-color: #2ecc71;
+  padding:  0;
+  border-radius:  100% !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor:  pointer;
+  transition:  opacity 0.3s, background 0.3s, box-shadow 0.3s;
+}
+button.wh-ap-btn::after {
+  content: '';
+  background-image: url('../media/contact/whatsapp.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 48%;
+  width:  100%;
+  height:  100%;
+  display:  block;
+  opacity: 1;
+}
+button.wh-ap-btn:hover {
+  opacity:  1;
+  background-color: #20bf6b;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.wh-api {
+  position:  fixed;
+   bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+.wh-fixed>a {
+  display:  block;
+  text-decoration:  none;
+}
+/*↓↓↓ MENÚ ↓↓↓*/
+/* ALINEAR ICONOS DE NAVBAR DE IZQ. A DER. */
+.nav-item a {
+  display: inline-block;
+}
+/* BORDE INFERIOR EN NAVBAR, SIMBOLIZANDO QUE ESTA ACTIVA ESA PÁGINA WEB */
+.nav-link.active {
+  border-bottom: 2px solid blue;
+}
+/*↓↓↓ FOOTER ↓↓↓*/
+@media (max-width: 767px) {
+  .ocultarFooterSm {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .ocultarFooterMd {
+    display: none;
+  }
+}

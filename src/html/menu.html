@@ -1,0 +1,58 @@
+<!-- Mostrar la marca / logotipo / nombre de la empresa y todas las navegaciones -->
+<!--marca, logo, nombre de la compañía-->
+<nav class="navbar navbar-expand-lg navbar-white">
+    <a class="navbar-brand" href="/">
+        <img src="https://www.disograrte.com/images/Isotipo_Disograrte.png" alt="Logo Disograrte.com"
+            title="Disograrte.com" width="82px" height="50px">
+    </a>
+    <a class="navbar-brand navbar-text" href="/">
+        Disograrte.com
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/services.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Compañía
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/sobre-nosotros.html">Sobre nosotros</a></li>
+                    <li><a class="dropdown-item" href="/contacto.html">Contacto</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="/politica-de-privacidad.html">Política de privacidad</a></li>
+                    <li><a class="dropdown-item" href="/politica-de-reembolso.html">Política de reembolso</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item d-flex justify-content-between">
+                <div>
+                    <a class="nav-link" href="https://facebook.com/disograrte" target="_blank"><i
+                            class="bi fa-lg bi-facebook text-primary"></i></a>
+                    <a class="nav-link" href="https://instagram.com/disograrte" target="_blank"><i
+                            class="bi fa-lg bi-instagram text-danger"></i></a>
+                    <a class="nav-link" href="https://wa.me/573024350392" target="_blank"><i
+                            class="bi fa-lg bi-whatsapp text-success"></i></a>
+                </div>
+                <button onclick="theme()" class="btn rounded-fill">
+                    <i id="dl-icon" class="bi bi-lg bi-moon-fill"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>

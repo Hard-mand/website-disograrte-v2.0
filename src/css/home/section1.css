@@ -1,0 +1,70 @@
+/* Definición de la animación */
+@keyframes levitate {
+    0% {
+        transform: translateY(0)
+    }
+
+    30% {
+        transform: translateY(-10px)
+    }
+
+    50% {
+        transform: translateY(4px)
+    }
+
+    70% {
+        transform: translateY(-15px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+/* Aplicar la animación a las imágenes */
+#Antichoque {
+    animation: levitate 13s ease 1s infinite;
+}
+
+#Microfono {
+    animation: levitate 10s ease 1s infinite;
+}
+
+#TV {
+    animation: levitate 12s ease 1s infinite;
+}
+
+#Radios-de-comunicacion {
+    animation: levitate 17s ease 1s infinite;
+}
+
+#Instrumentos {
+    animation: levitate 16s ease 1s infinite;
+}
+
+#Tripode {
+    animation: levitate 18s ease 1s infinite;
+}
+
+#Cables {
+    animation: levitate 14s ease 1s infinite;
+}
+
+#ParLed {
+    animation: levitate 12s ease 1s infinite;
+}
+
+.img-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Asegura que el SVG esté en el fondo */
+}
+
+#section12 {
+    height: 100vh;
+    
+}
