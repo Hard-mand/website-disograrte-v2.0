@@ -3,7 +3,10 @@ const dark = () => {
   document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill");
   document.querySelector("#body").setAttribute("class", "container-md bg-black");
   document.querySelector("h1").setAttribute("class", "text-white fw-bold m-5 m-md-0 mb-3 mb-md-4");
+  document.querySelector("h2").setAttribute("class", "text-white fw-bold m-5 m-md-0 mb-3 mb-md-4");
   document.querySelector("#p-header").setAttribute("class", "text-body fs-5 mx-5 mx-md-0");
+  document.querySelector("#header").setAttribute("class", "bg-black sticky-top");
+  
 
   var cards = document.querySelectorAll(".card");
   cards.forEach(function (card) {
@@ -19,7 +22,9 @@ const light = () => {
   document.querySelector("#dl-icon").setAttribute("class", "bi bi-moon-fill");
   document.querySelector("#body").setAttribute("class", "container-md bg-light");
   document.querySelector("h1").setAttribute("class", "text-black fw-bold m-5 m-md-0 mb-3 mb-md-4");
+  document.querySelector("h2").setAttribute("class", "text-black fw-bold m-5 m-md-0 mb-3 mb-md-4");
   document.querySelector("#p-header").setAttribute("class", "text-body fs-5 mx-5 mx-md-0");
+  document.querySelector("#header").setAttribute("class", "bg-light sticky-top")
 
   var cards = document.querySelectorAll(".card");
   cards.forEach(function (card) {
