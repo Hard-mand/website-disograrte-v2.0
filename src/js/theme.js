@@ -1,14 +1,17 @@
 const dark = () => {
   document.querySelector("body").setAttribute("data-bs-theme", "dark");
   document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill");
-  document.querySelector("#body").setAttribute("class", "container-md bg-black");
+  document.querySelector("#body").setAttribute("class", "container-fluid bg-black");
   document.querySelector("h1").setAttribute("class", "text-white fw-bold m-5 m-md-0 mb-3 mb-md-4");
-  document.querySelector("h2").setAttribute("class", "text-white fw-bold m-5 m-md-0 mb-3 mb-md-4");
   document.querySelector("#p-header").setAttribute("class", "text-body fs-5 mx-5 mx-md-0");
-  document.querySelector("#header").setAttribute("class", "bg-black sticky-top");
-  
+  document.querySelector("#header").setAttribute("class", "container-fluid bg-black sticky-top");
 
-  var cards = document.querySelectorAll(".card");
+  let h2 = document.querySelectorAll("h2");
+  h2.forEach(function (card) {
+    card.setAttribute("class", "text-white fw-bold m-5 m-md-0 mb-3 mb-md-4")
+  })
+
+  let cards = document.querySelectorAll(".card");
   cards.forEach(function (card) {
     card.setAttribute("class", "card mb-3 bg-secondary-subtle");
   });
@@ -20,13 +23,17 @@ const dark = () => {
 const light = () => {
   document.querySelector("body").setAttribute("data-bs-theme", "light");
   document.querySelector("#dl-icon").setAttribute("class", "bi bi-moon-fill");
-  document.querySelector("#body").setAttribute("class", "container-md bg-light");
+  document.querySelector("#body").setAttribute("class", "container-fluid bg-light");
   document.querySelector("h1").setAttribute("class", "text-black fw-bold m-5 m-md-0 mb-3 mb-md-4");
-  document.querySelector("h2").setAttribute("class", "text-black fw-bold m-5 m-md-0 mb-3 mb-md-4");
   document.querySelector("#p-header").setAttribute("class", "text-body fs-5 mx-5 mx-md-0");
-  document.querySelector("#header").setAttribute("class", "bg-light sticky-top")
+  document.querySelector("#header").setAttribute("class", "container-fluid bg-light sticky-top")
 
-  var cards = document.querySelectorAll(".card");
+  let h2 = document.querySelectorAll("h2");
+  h2.forEach(function (card) {
+    card.setAttribute("class", "text-black fw-bold m-5 m-md-0 mb-3 mb-md-4")
+  })
+
+  let cards = document.querySelectorAll(".card");
   cards.forEach(function (card) {
     card.setAttribute("class", "card mb-3 bg-light");
   });

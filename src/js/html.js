@@ -19,4 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   html("../html/home/section1.html", "section1");
   html("../html/home/section2.html", "section2");
   html("../html/home/section3.html", "section3");
+  html("../html/home/section4.html", "section4");
+  html("../html/home/section5.html", "section5");
+  html("../html/home/section6.html", "section6");
 })
