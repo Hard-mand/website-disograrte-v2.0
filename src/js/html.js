@@ -11,15 +11,15 @@ export function html(url, id) {
 
 document.addEventListener("DOMContentLoaded", function () {
   // All pages
-  html("../html/menu.html", "header");
-  html("../html/footer.html", "footer");
-  html("../html/wh.html", "wh");
+  html("../html/menu", "header");
+  html("../html/footer", "footer");
+  html("../html/wh", "wh");
   // index.html
-  html("../html/home/head.html", "head");
-  html("../html/home/section1.html", "section1");
-  html("../html/home/section2.html", "section2");
-  html("../html/home/section3.html", "section3");
-  html("../html/home/section4.html", "section4");
-  html("../html/home/section5.html", "section5");
-  html("../html/home/section6.html", "section6");
+  html("../html/home/head", "head");
+  html("../html/home/section1", "section1");
+  html("../html/home/section2", "section2");
+  html("../html/home/section3", "section3");
+  html("../html/home/section4", "section4");
+  html("../html/home/section5", "section5");
+  html("../html/home/section6", "section6");
 })
